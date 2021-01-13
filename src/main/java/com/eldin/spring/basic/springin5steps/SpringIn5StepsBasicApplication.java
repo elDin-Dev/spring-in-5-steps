@@ -1,11 +1,12 @@
 package com.eldin.spring.basic.springin5steps;
 
+import com.eldin.spring.basic.springin5steps.basic.BinarySearchImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class SpringIn5StepsApplication {
+public class SpringIn5StepsBasicApplication {
 
 	public static void main(String[] args) {
 
@@ -13,7 +14,7 @@ public class SpringIn5StepsApplication {
 		//BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSortAlgorithm());
 
 		ApplicationContext applicationContext=
-		SpringApplication.run(SpringIn5StepsApplication.class, args);
+		SpringApplication.run(SpringIn5StepsBasicApplication.class, args);
 
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
 

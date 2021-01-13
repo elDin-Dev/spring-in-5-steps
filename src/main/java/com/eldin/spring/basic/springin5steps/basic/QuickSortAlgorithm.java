@@ -1,7 +1,6 @@
-package com.eldin.spring.basic.springin5steps;
+package com.eldin.spring.basic.springin5steps.basic;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
