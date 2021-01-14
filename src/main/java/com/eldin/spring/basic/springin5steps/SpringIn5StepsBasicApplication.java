@@ -17,16 +17,12 @@ public class SpringIn5StepsBasicApplication {
 
 		ApplicationContext applicationContext=
 				 new AnnotationConfigApplicationContext(SpringIn5StepsBasicApplication.class);
-/*
-		SpringApplication.run(SpringIn5StepsBasicApplication.class, args);
-
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
 
 		int result = binarySearch.binarySearch(new int[] {12,4,6}, 3);
 
 		//System.out.println(binarySearch);
 		System.out.println(result);
-*/
 
 
 
