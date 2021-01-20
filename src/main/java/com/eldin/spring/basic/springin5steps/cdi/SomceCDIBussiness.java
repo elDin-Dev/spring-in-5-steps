@@ -18,4 +18,15 @@ public class SomceCDIBussiness {
     private SomceCDIDAO somceCDIDAO;
 
 
+    public int findGreatest(){
+        int greatest = Integer.MIN_VALUE;
+        int [] numbers = somceCDIDAO.getData();
+        for (int val : numbers) {
+            if (val>greatest){
+                greatest=val;
+            }
+        }
+        return greatest;
+    }
+
 }
