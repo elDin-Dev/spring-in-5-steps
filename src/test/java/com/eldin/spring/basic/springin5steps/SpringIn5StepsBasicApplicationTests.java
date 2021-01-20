@@ -1,12 +1,13 @@
 package com.eldin.spring.basic.springin5steps;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import com.eldin.spring.basic.springin5steps.basic.BinarySearchImpl;
 
-@SpringBootTest
+//@SpringBootTest
 class SpringIn5StepsBasicApplicationTests {
 
-	@Test
+	BinarySearchImpl binarySearch;
+
+	//@Test
 	void contextLoads() {
 	}
 
