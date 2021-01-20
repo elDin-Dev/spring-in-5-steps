@@ -26,13 +26,24 @@ public class SomceCDIBussinessTest {
     SomceCDIDAO daoMock;
 
     @Test
-    public void findGreatest(){
+    public void testBasicScenario(){
 
         Mockito.when(daoMock.getData()).thenReturn(new int[]{2,4});
 
         int greatest = bussiness.findGreatest();
 
         assertEquals(4,greatest);
+
+    }
+
+    @Test
+    public void testBasicScenario_NoValues(){
+
+        Mockito.when(daoMock.getData()).thenReturn(new int[]{});
+
+        int greatest = bussiness.findGreatest();
+
+        assertEquals(Integer.MIN_VALUE,greatest);
 
     }
 
